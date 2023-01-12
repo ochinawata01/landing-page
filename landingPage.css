@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto , arial;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span{
+    color:#7c0b77;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+     padding: 10px 25px;
+}
+
+nav ul li a {
+    color: #7c0b77;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: #f9004d;
+    transition: o.4s;
+
+}
+
+.sign{
+    color: #7c0b77;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.sign:hover{
+    color: #f9004d;
+    transition: o.4s;
+
+}
+
+.btn{
+    background-color: #7c0b77;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px   25px;
+    border-radius: none;
+    transition: transform .4s;
+    
+}
+
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: rgb(12, 12, 12);
+    font-size: 65px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+.newslatter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 50%;
+    padding: 14px 50px 14px 15px;
+    background: #f8e4f7;
+    border: 1px solid transparent;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main img{
+    height: auto;
+    width: 430px;
+}
+
+/*-------------------media----------------*/
+@media screen and (max-width: 900){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: block;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main{
+        text-align: center;
+        padding-left: 45px;
+        margin-left: 28%;
+    }
+}
